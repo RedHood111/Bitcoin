@@ -1,0 +1,71 @@
+@import url('font/GOTHIC.TTF');
+*{font-family: "Century Gothic";}
+
+
+.left{
+  background-color: rgb(225, 225, 225);
+  box-shadow: 0px 5px 14.7px 0.3px rgba(39, 39, 39, 0.85);
+  width: 20%;
+  height: 383px;
+ 
+}
+
+.list_head{
+  font-size: 24px;
+  color: rgb(36, 56, 75);
+  line-height: 1.2;
+  text-align: center;
+  padding: 10px 5px 0px 10px;
+  text-align: center;
+}
+.left_list li{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.left_list #p1:after{
+    content: "\25b7"; 
+}
+.p1{
+    list-style-image: url(../img/btc.png);
+}
+.p2{
+    list-style-image: url(../img/visa.png);
+}
+.p3{
+    list-style-image: url(../img/dash.png);
+}
+.p4{
+    list-style-image: url(../img/lcoin.png);
+}
+.p5{
+    list-style-image: url(../img/ripple.png);
+}
+.p6{
+    list-style-image: url(../img/privat.png);
+}
+.p7{
+    list-style-image: url(../img/monero.png);
+}
+.p8{
+    list-style-image: url(../img/zcash.png);
+}
+.p9{
+    list-style-image: url(../img/ether.png);
+}
+
+
+
+.right{
+  background-color: rgb(225, 225, 225);
+  box-shadow: 0px 5px 14.7px 0.3px rgba(39, 39, 39, 0.85);
+  width: 20%;
+  height: 383px;
+ 
+}
+.right_list li{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.right_list #p1:after{
+    content: "\25b7"; 
+}
