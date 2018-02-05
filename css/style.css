@@ -11,13 +11,17 @@ html {
     /*
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    text-decoration: none;*/
     list-style: none;
-*/
+
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
 
+}
+
+ul{
+    -webkit-padding-start: 0px;
 }
 
 /*MH*/
@@ -28,6 +32,7 @@ html {
     width: 20%;
     height: 383px;
 
+
 }
 
 .list_head {
@@ -35,53 +40,72 @@ html {
     color: rgb(36, 56, 75);
     line-height: 1.2;
     text-align: center;
-    padding: 10px 5px 0px 10px;
-    text-align: center;
+    padding: 5px 5px 0px 0px;
 }
 
 .left_list li {
     font-size: 18px;
-    margin-left: 10px;
+    vertical-align: center;
+    padding: 5px 5px 0px 5px;
 }
 
+
+.left_list #p1:hover{
+  box-sizing: border-box;
+  border-width: 1px;
+  border-color: rgb(0, 89, 82);
+  border-style: solid;
+  background-image: -moz-linear-gradient( 0deg, rgb(16,205,87) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(16,205,87) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(16,205,87) 0%, rgb(255,255,255) 100%);
+  width: 100%;
+
+
+}
 .left_list #p1:after {
     content: "\25b7";
+    position: absolute;
+    right: 10px;
 }
 
-.p1 {
-    list-style-image: url(../img/btc.png);
+#p1{
+   position: relative; 
+}
+.p1:before {
+    content: url(../img/btc.png);
+    
 }
 
-.p2 {
-    list-style-image: url(../img/visa.png);
+.p2:before {
+    content: url(../img/visa.png);
 }
 
-.p3 {
-    list-style-image: url(../img/dash.png);
+.p3:before {
+    content: url(../img/dash.png);
 }
 
-.p4 {
-    list-style-image: url(../img/lcoin.png);
+.p4:before {
+    content: url(../img/lcoin.png);
 }
 
-.p5 {
-    list-style-image: url(../img/ripple.png);
+.p5:before {
+    content: url(../img/ripple.png);
 }
 
-.p6 {
-    list-style-image: url(../img/privat.png);
+.p6:before {
+    content: url(../img/privat.png);
 }
 
-.p7 {
-    list-style-image: url(../img/monero.png);
+.p7:before {
+    content: url(../img/monero.png);
 }
 
-.p8 {
-    list-style-image: url(../img/zcash.png);
+.p8:before {
+    content: url(../img/zcash.png);
 }
 
-.p9 {
-    list-style-image: url(../img/ether.png);
+.p9:before {
+    content: url(../img/ether.png);
 }
 
 .right {
@@ -94,7 +118,7 @@ html {
 
 .right_list li {
     font-size: 18px;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .right_list #p1:after {
