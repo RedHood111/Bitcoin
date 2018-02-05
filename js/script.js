@@ -1,5 +1,5 @@
 var attr = document.querySelector('.cardNumber');
-document.addEventListener('mouseover', function(e){
+document.addEventListener('click', function(e){
     var _this=e.target;
     var status = attr.getAttribute('placeholder');
     if (_this.matches('.p2')||_this.matches('.p6')) {
