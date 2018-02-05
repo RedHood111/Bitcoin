@@ -1,7 +1,9 @@
 @import url('font/GOTHIC.TTF');
 *{font-family: "Century Gothic";}
 
-
+.form{
+  display: flex;
+}
 .left{
   background-color: rgb(225, 225, 225);
   box-shadow: 0px 5px 14.7px 0.3px rgba(39, 39, 39, 0.85);
