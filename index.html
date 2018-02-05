@@ -6,6 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<div class="formWrap">
+
+<!--сюда надо добавить заголовок и текст-->
+
 <div class="left">
 	<ul class="left_list">
 		<h3 class="list_head">Отправить</h3>
@@ -21,8 +25,25 @@
 	</ul>
 </div>
 
-
-<!-- center -->
+<!--MH-->
+ <form action="#">
+          <div class="formUp">
+              <a href="#"><img src="img/exchangeBtn.png" alt=""></a>
+          </div>
+          <div class="inputCont">
+              <input class="currency leftCur" type="text" value="0.003"> 
+              <input class="currency rightCur" type="text" value="1250 грн">
+              <input type="text" class="userData" placeholder="ФИО">
+              <input type="text" class="userData" placeholder="Ваш e-mail">
+              <input type="text" class="userData" placeholder="Номер карты получателя">
+              <input type="checkbox" id="rulesConfirm">
+              <label for="rulesConfirm">Я ознакомлен с <a href="#">правилами</a></label>
+          </div> 
+          <div class="formSubmit">
+              <input type="submit" value="Совершить обмен">
+          </div> 
+        </form>
+<!-- MH -->
 
 
 <div class="right">
@@ -39,6 +60,6 @@
 		<li id="p9" class="p9">Etherium</li>
 	</ul>
 </div>
-		
+	</div>	
 </body>
 </html>

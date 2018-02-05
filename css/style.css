@@ -1,71 +1,226 @@
 @import url('font/GOTHIC.TTF');
-*{font-family: "Century Gothic";}
-
-
-.left{
-  background-color: rgb(225, 225, 225);
-  box-shadow: 0px 5px 14.7px 0.3px rgba(39, 39, 39, 0.85);
-  width: 20%;
-  height: 383px;
- 
+* {
+    font-family: "Century Gothic";
 }
 
-.list_head{
-  font-size: 24px;
-  color: rgb(36, 56, 75);
-  line-height: 1.2;
-  text-align: center;
-  padding: 10px 5px 0px 10px;
-  text-align: center;
+/*MH*/
+
+*,
+body,
+html {
+    /*
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+*/
+    box-sizing: border-box;
+    outline: none;
+
 }
-.left_list li{
+
+/*MH*/
+
+.left {
+    background-color: rgb(225, 225, 225);
+    box-shadow: 0px 5px 14.7px 0.3px rgba(39, 39, 39, 0.85);
+    width: 20%;
+    height: 383px;
+
+}
+
+.list_head {
+    font-size: 24px;
+    color: rgb(36, 56, 75);
+    line-height: 1.2;
+    text-align: center;
+    padding: 10px 5px 0px 10px;
+    text-align: center;
+}
+
+.left_list li {
     font-size: 18px;
     margin-left: 10px;
 }
-.left_list #p1:after{
-    content: "\25b7"; 
+
+.left_list #p1:after {
+    content: "\25b7";
 }
-.p1{
+
+.p1 {
     list-style-image: url(../img/btc.png);
 }
-.p2{
+
+/*MH*/
+
+form {
+    width: 350px;
+    height: auto;
+    display: flex;
+    background: #f0f0f0;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 7px #a5a5a5;
+    margin: 0 25px;
+}
+
+.formUp {
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+    background: #10cd57;
+}
+
+.formUp a {
+    display: block;
+    width: 60px;
+    margin: 0 auto
+}
+
+.inputCont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30px
+}
+
+.currency {
+    width: 120px;
+    padding: 6px 7px 6px 3px;
+    background: url(../img/btc.png) no-repeat 5% center;
+    font-size: 16px;
+    color: #231f20;
+    border: 1px solid #959595;
+    border-radius: 5px;
+    margin: 17px 0;
+}
+
+.leftCur {
+    text-align: right
+}
+
+.rightCur {
+    background: url(../img/visa.png) no-repeat 95% center;
+    text-align: left
+}
+
+.userData {
+    width: 100%;
+    padding: 13px 20px;
+    border: 1px solid #959595;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: url(../img/formConf.png) no-repeat 95% center;
+    font-size: 16px;
+    color: #231f20
+}
+
+.userData::placeholder {
+    color: #8f8f8f;
+    font-size: 16px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+label {
+    width: 100%;
+    padding-left: 30px;
+    position: relative;
+    margin: 45px 0 25px;
+    color: #8f8e8e;
+    font-size: 16px
+}
+
+label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #959595;
+    border-radius: 3px;
+    top: -2px;
+    left: 0
+}
+
+input[type=checkbox]:checked + label:before {
+    background: url(../img/rulesConfirm.png) no-repeat center
+}
+
+label a {
+    color: #10cd57
+}
+
+.formSubmit {
+    width: 100%;
+    padding: 15px 0;
+    background: #e1e1e1;
+    display: flex;
+    justify-content: center
+}
+
+input[type=submit] {
+    padding: 10px;
+    background: #137d67;
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px #696969
+}
+
+.p2 {
     list-style-image: url(../img/visa.png);
 }
-.p3{
+
+.p3 {
     list-style-image: url(../img/dash.png);
 }
-.p4{
+
+.p4 {
     list-style-image: url(../img/lcoin.png);
 }
-.p5{
+
+.p5 {
     list-style-image: url(../img/ripple.png);
 }
-.p6{
+
+.p6 {
     list-style-image: url(../img/privat.png);
 }
-.p7{
+
+.p7 {
     list-style-image: url(../img/monero.png);
 }
-.p8{
+
+.p8 {
     list-style-image: url(../img/zcash.png);
 }
-.p9{
+
+.p9 {
     list-style-image: url(../img/ether.png);
 }
 
 
 
-.right{
-  background-color: rgb(225, 225, 225);
-  box-shadow: 0px 5px 14.7px 0.3px rgba(39, 39, 39, 0.85);
-  width: 20%;
-  height: 383px;
- 
+.right {
+    background-color: rgb(225, 225, 225);
+    box-shadow: 0px 5px 14.7px 0.3px rgba(39, 39, 39, 0.85);
+    width: 20%;
+    height: 383px;
+
 }
-.right_list li{
+
+.right_list li {
     font-size: 18px;
     margin-left: 10px;
 }
-.right_list #p1:after{
-    content: "\25b7"; 
+
+.right_list #p1:after {
+    content: "\25b7";
 }
+.formWrap {width: 100%; height: auto; background: #24384b; display: flex; justify-content: center}
