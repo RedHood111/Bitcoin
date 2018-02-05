@@ -1,4 +1,4 @@
-@import url('font/GOTHIC.TTF');
+@import url('../font/GOTHIC.TTF');
 * {
     font-family: "Century Gothic";
 }
@@ -15,6 +15,7 @@ html {
     list-style: none;
 */
     box-sizing: border-box;
+    text-decoration: none;
     outline: none;
 
 }
@@ -51,6 +52,54 @@ html {
     list-style-image: url(../img/btc.png);
 }
 
+.p2 {
+    list-style-image: url(../img/visa.png);
+}
+
+.p3 {
+    list-style-image: url(../img/dash.png);
+}
+
+.p4 {
+    list-style-image: url(../img/lcoin.png);
+}
+
+.p5 {
+    list-style-image: url(../img/ripple.png);
+}
+
+.p6 {
+    list-style-image: url(../img/privat.png);
+}
+
+.p7 {
+    list-style-image: url(../img/monero.png);
+}
+
+.p8 {
+    list-style-image: url(../img/zcash.png);
+}
+
+.p9 {
+    list-style-image: url(../img/ether.png);
+}
+
+.right {
+    background-color: rgb(225, 225, 225);
+    box-shadow: 0px 5px 14.7px 0.3px rgba(39, 39, 39, 0.85);
+    width: 20%;
+    height: 383px;
+
+}
+
+.right_list li {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.right_list #p1:after {
+    content: "\25b7";
+}
 /*MH*/
 
 form {
@@ -59,9 +108,9 @@ form {
     display: flex;
     background: #f0f0f0;
     flex-direction: column;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 0px 7px #a5a5a5;
+    box-shadow: 0px 5px 15px rgba(39, 39, 39, 0.85);
     margin: 0 25px;
 }
 
@@ -111,7 +160,7 @@ form {
     border: 1px solid #959595;
     border-radius: 5px;
     margin-bottom: 20px;
-    background: url(../img/formConf.png) no-repeat 95% center;
+    background: url(../img/check.png) no-repeat 95% center;
     font-size: 16px;
     color: #231f20
 }
@@ -173,54 +222,5 @@ input[type=submit] {
     box-shadow: 0px 1px 3px #696969
 }
 
-.p2 {
-    list-style-image: url(../img/visa.png);
-}
-
-.p3 {
-    list-style-image: url(../img/dash.png);
-}
-
-.p4 {
-    list-style-image: url(../img/lcoin.png);
-}
-
-.p5 {
-    list-style-image: url(../img/ripple.png);
-}
-
-.p6 {
-    list-style-image: url(../img/privat.png);
-}
-
-.p7 {
-    list-style-image: url(../img/monero.png);
-}
-
-.p8 {
-    list-style-image: url(../img/zcash.png);
-}
-
-.p9 {
-    list-style-image: url(../img/ether.png);
-}
-
-
-
-.right {
-    background-color: rgb(225, 225, 225);
-    box-shadow: 0px 5px 14.7px 0.3px rgba(39, 39, 39, 0.85);
-    width: 20%;
-    height: 383px;
-
-}
-
-.right_list li {
-    font-size: 18px;
-    margin-left: 10px;
-}
-
-.right_list #p1:after {
-    content: "\25b7";
-}
 .formWrap {width: 100%; height: auto; background: #24384b; display: flex; justify-content: center}
+/*MH*/
