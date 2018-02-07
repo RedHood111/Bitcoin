@@ -1,8 +1,11 @@
-@import url('font/GOTHIC.TTF');
+@import url('../font/GOTHIC.TTF');
 * {
     font-family: "Century Gothic";
 }
 
+
+@font-face {font-family: 'Century Gothic';
+src: url(../font/GOTHIC.TTF);}
 /*MH*/
 
 *,
@@ -21,7 +24,7 @@ html {
 
 /*MH*/
 
-header {width: 100%; height: auto; position: fixed; background: #2e4357; display: flex; justify-content: space-between; align-items: center; padding: 5px 180px; top: 15px; box-shadow: 0px 1px 1px #203141 }
+header {width: 100%; height: auto; position: fixed; background: #2e4357; display: flex; justify-content: space-between; align-items: center; padding: 5px 180px; top: 15px; box-shadow: 0px 1px 1px #203141; z-index: 20;}
 .contacts {display: flex; flex-direction: column; justify-content: space-around; align-items: flex-start; }
 .phone, .mail {color: #10cd57; font-size: 14px; position: relative; padding-left: 45px; line-height: 2.2}
 .phone:before, .mail:before {content: ''; position: absolute; display: block; width: 30px; height: 30px; background: url(../img/phoneIcon.png) no-repeat center; top: 0; left: 0}
@@ -143,6 +146,7 @@ form {
     overflow: hidden;
     box-shadow: 0px 5px 15px rgba(39, 39, 39, 0.85);
     margin: 60px 25px 0;
+    z-index: 10;
     
 }
 
@@ -159,7 +163,6 @@ form {
     margin: 0 auto;
     background: url(../img/exchangeBtn.png) no-repeat center;
 }
-.changeForm:hover {cursor: pointer}
 
 .inputCont {
     display: flex;
@@ -257,4 +260,31 @@ input[type=submit] {
 }
 
 .formWrap {width: 100%; height: auto; background: #24384b; display: flex; justify-content: center; padding-top: 130px; flex-wrap: wrap;}
+
+.container1 {width: 100%; height: auto; background: url(../img/mountain.png) no-repeat right #fff; padding: 100px 0 40px; margin-top: -20px; position: relative; }
+.page1 {position: absolute; right: 200px; top: 50px; opacity: .5;}
+.reserve {width: 670px; height: 450px; padding: 15px 100px; background: #f3f3f3; box-shadow: 0px 5px 15px rgba(39, 39, 39, 0.85); margin: 0 auto; z-index: 10; position: relative; z-index: 10; display: flex; flex-direction: column; align-items: center}
+.reserveBehind {position: absolute; width: 760px; height: 390px; background: #f3f3f3; box-shadow: 0px 5px 15px rgba(39, 39, 39, 0.85); top: 130px; left: 0; right: 0; margin: auto;}
+.reserve h2 {color: #24384b; font-size: 36px; letter-spacing: 5px;}
 /*MH*/
+.reserve ul {margin: 15px 0 25px; width: 100%;}
+.reserve ul li {font-size: 18px; color: #24384b; padding-left: 40px; line-height: 30px; position: relative}
+.resItem:before { content: ''; position: absolute; display: block; width: 25px; height: 25px; top: 2px; left: 0; background: url(../img/btc.png) no-repeat center;}
+.reserveItem2:before {background-image: url(../img/visa.png)}
+.reserveItem3:before {background-image: url(../img/dash.png)}
+.reserveItem4:before {background-image: url(../img/lcoin.png)}
+.reserveItem5:before {background-image: url(../img/ripple.png)}
+.reserveItem6:before {background-image: url(../img/privat.png)}
+.reserveItem7:before {background-image: url(../img/usd.png)}
+.reserveItem8:before {background-image: url(../img/monero.png)}
+.reserveItem9:before {background-image: url(../img/zcash.png)}
+.reserveItem10:before {background-image: url(../img/ether.png)}
+.reserve ul li span {position: absolute; right: 0; text-align: right}
+.reserve a {  padding: 10px;
+    background: #137d67;
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px #696969}
