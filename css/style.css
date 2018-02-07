@@ -9,11 +9,9 @@
 body,
 html {
     
-/*
     margin: 0;
     padding: 0;
     list-style: none;
-*/
     text-decoration: none;
     box-sizing: border-box;
     text-decoration: none;
@@ -23,12 +21,30 @@ html {
 
 /*MH*/
 
+header {width: 100%; height: auto; position: fixed; background: #2e4357; display: flex; justify-content: space-between; align-items: center; padding: 5px 180px; top: 15px; box-shadow: 0px 1px 1px #203141 }
+.contacts {display: flex; flex-direction: column; justify-content: space-around; align-items: flex-start; }
+.phone, .mail {color: #10cd57; font-size: 14px; position: relative; padding-left: 45px; line-height: 2.2}
+.phone:before, .mail:before {content: ''; position: absolute; display: block; width: 30px; height: 30px; background: url(../img/phoneIcon.png) no-repeat center; top: 0; left: 0}
+.mail {color: #d4c1af}
+.mail:before {background-image: url(../img/mailIcon.png)}
+.courseInfo {width: 260px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; border-bottom: 2px solid #fff; position: relative}
+.courseInfo p {width: 48%; line-height: 2; color: #d4c1af; font-size: 14px;}
+.courseInfo p span {margin-left: 5px; color: #10cd57;}
+.courseInfo p span:before {content: '$'}
+.courseInfo:after {content: ''; display: block; position: absolute; top: 100%; left: 0; right: 0; margin: auto; width: 0; height: 0; background: transparent; border: 10px solid transparent; border-top-color: #10cd57; transform: scaleX(2); filter: drop-shadow(0px 0px 2px #1a2631)}
+.navBtns {width: 130px; display: flex; justify-content: space-between}
+
+
+
 .left {
     background-color: rgb(225, 225, 225);
     box-shadow: 0px 5px 14.7px 0.3px rgba(39, 39, 39, 0.85);
     width: 20%;
     height: 383px;
-
+/*    MH*/
+    padding: 0 5px;
+   
+/*MH*/
 }
 
 .list_head {
@@ -43,6 +59,10 @@ html {
 .left_list li {
     font-size: 18px;
     margin-left: 10px;
+    
+/*    MH*/
+     margin-left: 35px
+/*         MH*/
 }
 
 .left_list #p1:after {
@@ -90,12 +110,19 @@ html {
     box-shadow: 0px 5px 14.7px 0.3px rgba(39, 39, 39, 0.85);
     width: 20%;
     height: 383px;
+/*    MH*/
+     padding: 0 5px;
+/*    MH*/
 
 }
 
 .right_list li {
     font-size: 18px;
     margin-left: 10px;
+    /*    MH*/
+   
+    margin-left: 35px
+/*MH*/
 }
 
 .right_list #p1:after {
@@ -225,5 +252,5 @@ input[type=submit] {
     box-shadow: 0px 1px 3px #696969
 }
 
-.formWrap {width: 100%; height: auto; background: #24384b; display: flex; justify-content: center}
+.formWrap {width: 100%; height: auto; background: #24384b; display: flex; justify-content: center; padding-top: 280px}
 /*MH*/
