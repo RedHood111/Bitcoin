@@ -4,14 +4,17 @@
 }
 
 
-@font-face {font-family: 'Century Gothic';
-src: url(../font/GOTHIC.TTF);}
+@font-face {
+    font-family: 'Century Gothic';
+    src: url(../font/GOTHIC.TTF);
+}
+
 /*MH*/
 
 *,
 body,
 html {
-    
+
     margin: 0;
     padding: 0;
 
@@ -26,20 +29,121 @@ html {
 
 /*MH*/
 
-header {width: 100%; height: auto; position: fixed; background: #2e4357; display: flex; justify-content: space-between; align-items: center; padding: 5px 180px; top: 15px; box-shadow: 0px 1px 1px #203141; z-index: 20;}
-.contacts {display: flex; flex-direction: column; justify-content: space-around; align-items: flex-start; }
-.phone, .mail {color: #10cd57; font-size: 14px; position: relative; padding-left: 45px; line-height: 2.2}
-.phone:before, .mail:before {content: ''; position: absolute; display: block; width: 30px; height: 30px; background: url(../img/phoneIcon.png) no-repeat center; top: 0; left: 0}
-.mail {color: #d4c1af}
-.mail:before {background-image: url(../img/mailIcon.png)}
-.courseInfo {width: 260px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; border-bottom: 2px solid #fff; position: relative}
-.courseInfo p {width: 48%; line-height: 2; color: #d4c1af; font-size: 14px;}
-.courseInfo p span {margin-left: 5px; color: #10cd57;}
-.courseInfo p span:before {content: '$'}
-.courseInfo:after {content: ''; display: block; position: absolute; top: 100%; left: 0; right: 0; margin: auto; width: 0; height: 0; background: transparent; border: 10px solid transparent; border-left-width: 20px; border-right-width: 20px; border-top-color: #10cd57; filter: drop-shadow(0px 0px 2px #1a2631)}
-.navBtns {width: 130px; display: flex; justify-content: space-between}
-h1 {width: 100%; margin-bottom: 20px; color: #d4c1af; font-size: 48px; font-weight: bolder; text-align: center}
-.formWrap p {width: 100%;text-align: center; font-size: 16px; color: #d4c1af}
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background: #2e4357;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 180px;
+    top: 15px;
+    box-shadow: 0px 1px 1px #203141;
+    z-index: 20;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.phone,
+.mail {
+    color: #10cd57;
+    font-size: 14px;
+    position: relative;
+    padding-left: 45px;
+    line-height: 2.2
+}
+
+.phone:before,
+.mail:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/phoneIcon.png) no-repeat center;
+    top: 0;
+    left: 0
+}
+
+.mail {
+    color: #d4c1af
+}
+
+.mail:before {
+    background-image: url(../img/mailIcon.png)
+}
+
+.courseInfo {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #fff;
+    position: relative
+}
+
+.courseInfo p {
+    width: 48%;
+    line-height: 2;
+    color: #d4c1af;
+    font-size: 14px;
+}
+
+.courseInfo p span {
+    margin-left: 5px;
+    color: #10cd57;
+}
+
+.courseInfo p span:before {
+    content: '$'
+}
+
+.courseInfo:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 10px solid transparent;
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-top-color: #10cd57;
+    filter: drop-shadow(0px 0px 2px #1a2631)
+}
+
+.navBtns {
+    width: 130px;
+    display: flex;
+    justify-content: space-between
+}
+
+h1 {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #d4c1af;
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center
+}
+
+.formWrap p {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #d4c1af
+}
 
 
 .left {
@@ -47,13 +151,13 @@ h1 {width: 100%; margin-bottom: 20px; color: #d4c1af; font-size: 48px; font-weig
     box-shadow: 0px 5px 14.7px 0.3px rgba(39, 39, 39, 0.85);
     width: 20%;
     height: 383px;
-/*    MH*/
+    /*    MH*/
     padding: 0 5px;
-     margin-top: 65px
-   
-/*MH*/
+    margin-top: 65px
+    /*MH*/
 }
-.left_list{
+
+.left_list {
     list-style: none;
 }
 
@@ -68,39 +172,41 @@ h1 {width: 100%; margin-bottom: 20px; color: #d4c1af; font-size: 48px; font-weig
 .left_list li {
     font-size: 18px;
     margin-left: 10px;
-    
-/*    MH*/
-     margin-left: 35px
-/*         MH*/
+
+    /*    MH*/
+    margin-left: 35px
+    /*         MH*/
 }
 
 .left_list #p1:after {
     content: "\25b7";
 }
 
-.left_list #p1:hover{
+.left_list #p1:hover {
     box-sizing: border-box;
     border-width: 1px;
     border-color: rgb(0, 89, 82);
     border-style: solid;
-    background-image: -webkit-linear-gradient(left, rgb(16,205,87) 0%, rgb(255,255,255) 100%);
-    background-image: -o-linear-gradient(left, rgb(16,205,87) 0%, rgb(255,255,255) 100%);
-    background-image: linear-gradient(to right, rgb(16,205,87) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient(left, rgb(16, 205, 87) 0%, rgb(255, 255, 255) 100%);
+    background-image: -o-linear-gradient(left, rgb(16, 205, 87) 0%, rgb(255, 255, 255) 100%);
+    background-image: linear-gradient(to right, rgb(16, 205, 87) 0%, rgb(255, 255, 255) 100%);
 
 
 }
+
 .left_list #p1:after {
     content: "\25b7";
     position: absolute;
     right: 10px;
 }
 
-#p1{
-   position: relative; 
+#p1 {
+    position: relative;
 }
+
 .p1:before {
     content: url(../img/btc.png);
-    
+
 }
 
 .p2:before {
@@ -177,25 +283,24 @@ h1 {width: 100%; margin-bottom: 20px; color: #d4c1af; font-size: 48px; font-weig
     box-shadow: 0px 5px 14.7px 0.3px rgba(39, 39, 39, 0.85);
     width: 20%;
     height: 383px;
-/*    MH*/
-     padding: 0 5px;
+    /*    MH*/
+    padding: 0 5px;
     margin-top: 65px
-/*    MH*/
-
+    /*    MH*/
 }
 
 .right_list li {
     font-size: 18px;
     margin-left: 10px;
     /*    MH*/
-   
     margin-left: 35px
-/*MH*/
+    /*MH*/
 }
 
 .right_list #p1:after {
     content: "\25b7";
 }
+
 /*MH*/
 
 form {
@@ -209,7 +314,7 @@ form {
     box-shadow: 0px 5px 15px rgba(39, 39, 39, 0.85);
     margin: 60px 25px 0;
     z-index: 10;
-    
+
 }
 
 .formUp {
@@ -321,32 +426,261 @@ input[type=submit] {
     box-shadow: 0px 1px 3px #696969
 }
 
-.formWrap {width: 100%; height: auto; background: #24384b; display: flex; justify-content: center; padding-top: 130px; flex-wrap: wrap;}
+.formWrap {
+    width: 100%;
+    height: auto;
+    background: #24384b;
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+    flex-wrap: wrap;
+}
 
-.container1 {width: 100%; height: auto; background: url(../img/mountain.png) no-repeat right #fff; padding: 100px 0 40px; margin-top: -20px; position: relative; }
-.page1 {position: absolute; right: 200px; top: 50px; opacity: .5;}
-.reserve {width: 670px; height: 450px; padding: 15px 100px; background: #f3f3f3; box-shadow: 0px 5px 15px rgba(39, 39, 39, 0.85); margin: 0 auto; z-index: 10; position: relative; z-index: 10; display: flex; flex-direction: column; align-items: center}
-.reserveBehind {position: absolute; width: 760px; height: 390px; background: #f3f3f3; box-shadow: 0px 5px 15px rgba(39, 39, 39, 0.85); top: 130px; left: 0; right: 0; margin: auto;}
-.reserve h2 {color: #24384b; font-size: 36px; letter-spacing: 5px;}
+.container1 {
+    width: 100%;
+    height: auto;
+    background: url(../img/mountain.png) no-repeat right #fff;
+    padding: 100px 0 40px;
+    margin-top: -20px;
+    position: relative;
+}
+
+.page1 {
+    position: absolute;
+    right: 200px;
+    top: 50px;
+    opacity: .5;
+}
+
+.reserve {
+    width: 670px;
+    height: 450px;
+    padding: 15px 100px;
+    background: #f3f3f3;
+    box-shadow: 0px 5px 15px rgba(39, 39, 39, 0.85);
+    margin: 0 auto;
+    z-index: 10;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.reserveBehind {
+    position: absolute;
+    width: 760px;
+    height: 390px;
+    background: #f3f3f3;
+    box-shadow: 0px 5px 15px rgba(39, 39, 39, 0.85);
+    top: 130px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.reserve h2 {
+    color: #24384b;
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+
 /*MH*/
-.reserve ul {margin: 15px 0 25px; width: 100%; list-style: none;}
-.reserve ul li {font-size: 18px; color: #24384b; padding-left: 40px; line-height: 30px; position: relative}
-.resItem:before { content: ''; position: absolute; display: block; width: 25px; height: 25px; top: 2px; left: 0; background: url(../img/btc.png) no-repeat center;}
-.reserveItem2:before {background-image: url(../img/visa.png)}
-.reserveItem3:before {background-image: url(../img/dash.png)}
-.reserveItem4:before {background-image: url(../img/lcoin.png)}
-.reserveItem5:before {background-image: url(../img/ripple.png)}
-.reserveItem6:before {background-image: url(../img/privat.png)}
-.reserveItem7:before {background-image: url(../img/usd.png)}
-.reserveItem8:before {background-image: url(../img/monero.png)}
-.reserveItem9:before {background-image: url(../img/zcash.png)}
-.reserveItem10:before {background-image: url(../img/ether.png)}
-.reserve ul li span {position: absolute; right: 0; text-align: right}
-.reserve a {  padding: 10px;
+
+.reserve ul {
+    margin: 15px 0 25px;
+    width: 100%;
+    list-style: none;
+}
+
+.reserve ul li {
+    font-size: 18px;
+    color: #24384b;
+    padding-left: 40px;
+    line-height: 30px;
+    position: relative
+}
+
+.resItem:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    top: 2px;
+    left: 0;
+    background: url(../img/btc.png) no-repeat center;
+}
+
+.reserveItem2:before {
+    background-image: url(../img/visa.png)
+}
+
+.reserveItem3:before {
+    background-image: url(../img/dash.png)
+}
+
+.reserveItem4:before {
+    background-image: url(../img/lcoin.png)
+}
+
+.reserveItem5:before {
+    background-image: url(../img/ripple.png)
+}
+
+.reserveItem6:before {
+    background-image: url(../img/privat.png)
+}
+
+.reserveItem7:before {
+    background-image: url(../img/usd.png)
+}
+
+.reserveItem8:before {
+    background-image: url(../img/monero.png)
+}
+
+.reserveItem9:before {
+    background-image: url(../img/zcash.png)
+}
+
+.reserveItem10:before {
+    background-image: url(../img/ether.png)
+}
+
+.reserve ul li span {
+    position: absolute;
+    right: 0;
+    text-align: right
+}
+
+.reserve a {
+    padding: 10px;
     background: #137d67;
     color: #eeeeee;
     font-weight: bold;
     font-size: 16px;
     border: none;
     border-radius: 5px;
-    box-shadow: 0px 1px 3px #696969}
+    box-shadow: 0px 1px 3px #696969
+}
+
+.container2 {
+    width: 100%;
+    height: auto;
+    padding: 80px 125px 125px 110px;
+    background: #24384b;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container2 h2 {
+    width: 100%;
+    font-size: 36px;
+    color: #d4c1af;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.page2 {
+    position: absolute;
+    left: 110px;
+    bottom: 55px;
+    opacity: .65;
+}
+
+.triangleWrap {
+    width: 100%;
+    height: 470px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 270px solid transparent;
+    border-top-width: 470px;
+    border-bottom-width: 470px;
+    border-top-color: #137d67;
+    filter: drop-shadow(0px 5px 9px #15202a)
+}
+
+.triangle2 {
+    border-top-color: transparent;
+    border-bottom-color: #137d67;
+    top: -470px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.triangle3 {
+    right: 0
+}
+
+.triangleInner {
+    width: 260px;
+    height: 210px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
+}
+
+.triangleInner p {
+    color: #f4f4f4;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold
+}
+
+.inTrItem1 {
+    left: 135px;
+    top: 30px;
+}
+
+.inTrItem2 {
+    width: 333px;
+    left: 470px;
+    top: 190px;
+}
+
+.inTrItem3 {
+    left: 885px;
+    top: 30px;
+}
+
+.container3 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: url(../img/3.png) no-repeat;
+    background-position: right 110px top 130px;
+    padding: 80px 170px 95px 160px
+}
+
+.wrapSEOtxt {
+    border-bottom: #636363;
+    margin: 0 auto;
+}
+
+.wrapSEOtxt h2 {
+    color: #24384b;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 45px
+}
+
+.wrapSEOtxt p {
+    color: #24384b;
+    font-size: 16px;
+    margin-bottom: 25px
+}
