@@ -711,3 +711,24 @@ input[type=submit] {
 .container4Item {margin-top: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap}
 .feedback p {margin-left: 10px; color: #24384b; font-size: 16px; font-weight: bold}
 .topItem {margin-top: 50px}
+footer {width: 100%; height: auto; background: #252525; padding: 70px 0 10px}
+.footerNav ul {display: flex; justify-content: center}
+.footerNav ul li a {padding: 0 15px; color: #32b04c; font-size: 18px; font-weight: bold}
+.socialCircle {margin: 70px 0; display: flex; justify-content: center; align-items: flex-end;}
+.socialCircle a {margin: 0 10px}
+.partners {width: 695px; height: auto; display: flex; flex-wrap: wrap; background: #10171e; justify-content: space-between; margin: 0 auto}
+.partnerItem {width: 90px; height: 30px; background: url(../img/partners.png) no-repeat}
+.partner2 {background-position-X: -100px}
+.partner3 {background-position-X: -205px}
+.partner4 {background-position-X: -305px}
+.partner5 {background-position-X: -405px}
+.partner6 {background-position-X: -505px}
+.partner7 {background-position-X: -605px}
+.partner8 {margin-top: 10px; background-position-Y: -42px }
+.partner9 {margin-top: 10px; background-position-X: -105px; background-position-Y: -42px }
+.partner10 {margin-top: 10px; background-position-X: -205px; background-position-Y: -42px }
+.partner11 {margin-top: 10px; background-position-X: -305px; background-position-Y: -42px }
+.partner12 {margin-top: 10px; background-position-X: -405px; background-position-Y: -42px }
+.partner13 {margin-top: 10px; background-position-X: -505px; background-position-Y: -42px }
+.partner14 {margin-top: 10px; background-position-X: -605px; background-position-Y: -42px }
+.copyright {padding-top: 20px; width: 695px; margin: 0 auto; color: #32b04c; font-size: 18px; font-weight: bold}
