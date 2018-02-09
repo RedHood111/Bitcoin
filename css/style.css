@@ -24,6 +24,7 @@ html {
     text-decoration: none;
     outline: none;
     -webkit-padding-start: 0px;
+    transition: .5s
 
 }
 
@@ -31,7 +32,7 @@ html {
 
 header {
     width: 100%;
-    height: auto;
+    height: 85px;
     position: fixed;
     background: #2e4357;
     display: flex;
@@ -41,6 +42,7 @@ header {
     top: 15px;
     box-shadow: 0px 1px 1px #203141;
     z-index: 20;
+    
 }
 
 .contacts {
@@ -86,7 +88,8 @@ header {
     align-items: center;
     flex-wrap: wrap;
     border-bottom: 2px solid #fff;
-    position: relative
+    position: relative;
+    background: #2e4357; align-self: flex-start; margin-top: 8px
 }
 
 .courseInfo p {
@@ -94,6 +97,7 @@ header {
     line-height: 2;
     color: #d4c1af;
     font-size: 14px;
+    
 }
 
 .courseInfo p span {
@@ -105,7 +109,7 @@ header {
     content: '$'
 }
 
-.courseInfo:after {
+.showRest {
     content: '';
     display: block;
     position: absolute;
@@ -120,8 +124,17 @@ header {
     border-left-width: 20px;
     border-right-width: 20px;
     border-top-color: #10cd57;
-    filter: drop-shadow(0px 0px 2px #1a2631)
+    filter: drop-shadow(0px 0px 2px #1a2631);
+    animation: showRest .5s infinite;
 }
+@keyframes showRest {
+    50% {filter: drop-shadow(0px 0px 2px #fff)}
+}
+.hidden {display: none; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #2e4357;}
 
 .navBtns {
     width: 130px;

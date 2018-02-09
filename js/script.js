@@ -8,3 +8,18 @@ document.addEventListener('click', function(e){
          attr.setAttribute('placeholder', 'Номер кошелька')
     }
 })
+var hidden = document.querySelector('.hidden'),
+    showRest = document.querySelector('.showRest'),
+    flagShow = true;
+showRest.addEventListener('mousemove', function(e){
+        if (flagShow) {
+            hidden.style.display='flex';
+            flagShow = false;
+            showRest.style.transform='scaleY(-1) translateY(17px)'}
+    else {
+        hidden.style.display='none';
+        flagShow = true;
+         showRest.style.transform='none'
+    }
+        
+  })
