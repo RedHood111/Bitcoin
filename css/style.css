@@ -117,7 +117,6 @@ header {
 }
 
 .showRest {
-    content: '';
     display: block;
     position: absolute;
     top: 100%;
@@ -197,34 +196,48 @@ h1 {
 
 .left_list li {
     font-size: 18px;
+/*
     margin-left: 10px;
 
-    /*    MH*/
-    margin-left: 35px
+        MH
+    margin-left: 35px;
+*/
+    padding-left: 35px;
+    position: relative;
     /*         MH*/
 }
 
+/*
 .left_list #p1:after {
     content: "\25b7";
 }
+*/
 
-.left_list #p1:hover {
+.left_list li:hover, .right_list li:hover {
     box-sizing: border-box;
     border-width: 1px;
     border-color: rgb(0, 89, 82);
     border-style: solid;
-    background-image: -webkit-linear-gradient(left, rgb(16, 205, 87) 0%, rgb(255, 255, 255) 100%);
+    background: -webkit-linear-gradient(left, #05b253, #4dc185); 
+    background: -moz-linear-gradient(left, #05b253, #4dc185); 
+    background: -ms-linear-gradient(left, #05b253, #4dc185);
+/*
     background-image: -o-linear-gradient(left, rgb(16, 205, 87) 0%, rgb(255, 255, 255) 100%);
     background-image: linear-gradient(to right, rgb(16, 205, 87) 0%, rgb(255, 255, 255) 100%);
+*/
 
 
 }
 
-.left_list #p1:after {
-    content: "\25b7";
-    position: absolute;
-    right: 10px;
+.left_list li:after, .right_list li:after {
+    content: '';
+    position: absolute; 
+    display: block;
+    width: 0; height: 0; border: 10px solid transparent; border-left-color: #e1e1e1;
+    top: 0; bottom: 0; margin: auto;
+    right: 0;
 }
+
 
 #p1 {
     position: relative;
@@ -311,21 +324,27 @@ h1 {
     height: 383px;
     /*    MH*/
     padding: 0 5px;
-    margin-top: 65px
+    margin-top: 65px;
     /*    MH*/
 }
 
 .right_list li {
     font-size: 18px;
+/*
     margin-left: 10px;
-    /*    MH*/
-    margin-left: 35px
+        MH
+    margin-left: 35px;
+*/
+    position: relative;
+    padding-left: 35px;
     /*MH*/
 }
+/*
 
 .right_list #p1:after {
     content: "\25b7";
 }
+*/
 
 /*MH*/
 
