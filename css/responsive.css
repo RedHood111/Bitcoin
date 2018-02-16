@@ -11,5 +11,15 @@
 }
 
 @media screen and (max-width: 1024px) {
-    
+    header {flex-wrap: wrap; padding: 0; }
+    .courseInfo {order: 2; width: 100%; padding: 0 150px 0 230px;}
+    .logo {margin-left: 10px;}
+    .navBtns {margin-right: 10px;}
+    .formWrap {padding: 180px 15px 0;}
+    .left, .right {width: 27%}
+    form {width: 39%; margin-left: 10px; margin-right: 10px}
+    .left {transform: translateX(100px)}
+    .right {transform: translateX(-100px)}
+    .left:hover, .right:hover {transform: none}
+    .inputCont {padding: 0 5px}
 }
