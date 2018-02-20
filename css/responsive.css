@@ -1,7 +1,7 @@
 @media screen and (max-width: 1360px) {
     header {padding: 5px 15px}
     .page1 {right: 20px}
-    .container2 {padding: 80px 25px 125px 10px;}
+    .container2 {padding: 80px 25px 125px 10px; overflow: hidden}
     .triangleWrap {width: 1024px; margin: 50px auto 0; height: 910px;}
     .triangle2 {top: -470px; left: 245px;}
     .triangle3 {right: 95px; top: 520px}
