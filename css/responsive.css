@@ -1,5 +1,6 @@
 @media screen and (max-width: 1360px) {
     header {padding: 5px 15px}
+    .page1 {right: 20px}
     .container2 {padding: 80px 25px 125px 10px;}
     .triangleWrap {width: 1024px; margin: 50px auto 0; height: 910px;}
     .triangle2 {top: -470px; left: 245px;}
@@ -22,4 +23,21 @@
     .right {transform: translateX(-100px)}
     .left:hover, .right:hover {transform: none}
     .inputCont {padding: 0 5px}
+    .reserveBehind {width: 75%;}
+    .reserve {width: 65%; padding: 15px 40px;}
+    .triangleWrap {width: 760px; height: 1065px;}
+    .triangle {border: 270px solid transparent; border-left-width: 470px; border-right-width: 470px; border-right-color: #137d67; border-top-color: transparent}
+    .triangle1 {left: -45%; top: -50px}
+    .triangle2 {border-left-color: #137d67; border-right-color: transparent; top: 280px;
+    left: 15%; right: auto}
+    .triangle3  {left: -45%; top: 610px}
+    .inTrItem1 {left: 180px; top: -135px;}
+    .inTrItem2 {left: -465px; top: -130px;} 
+    .inTrItem3 {left: 180px; top: -110px;}
+    .page2 {left: 40px; bottom: 40px}
+    .container3 {padding: 50px 30px;}
+    .page4 {top: 10px;}
+    .container4 {padding-left: 60px; padding-bottom: 70px}
+    .inputWrap {margin-left: 145px}
+    .share {margin-left: 190px}
 }
