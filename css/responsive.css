@@ -41,3 +41,20 @@
     .inputWrap {margin-left: 145px}
     .share {margin-left: 190px}
 }
+
+@media screen and (max-width: 760px) {
+    header {height: auto}
+    .navBtns {width: 25%; order: 3; align-self: flex-start; margin-top: 15px}
+    .courseInfo {width: 70%; padding: 0}
+    h1 {font-size: 36px}
+    .formWrap {position: relative; }
+    form {width: 330px;}
+    .left, .right {position: absolute; width: 250px; top: 385px}
+    .left:before, .right:before {content: ''; position: absolute; display: block; width: 0; height: 0; border: 10px solid transparent; border-right-color: #137d67; left: -5px; top: 0; bottom: 0; margin: auto}
+     .left {transform: translateX(-62px)}
+    .right {transform: translateX(62px)}
+    .right:before {border: 10px solid transparent; border-left-color: #137d67; left: auto; right: -5px}
+   .left:hover {z-index: 15; transform: translateX(-58px)} 
+    .right:hover {z-index: 15; transform: translateX(58px)}
+    .left:hover:before, .right:hover:before {display: none}
+}
